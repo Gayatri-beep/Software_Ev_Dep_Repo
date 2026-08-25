@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="SampleApp Setup 1.2" Language="1033" Version="1.0.0.0" Manufacturer="SwinburneStudent"
+	UpgradeCode="{BBFD072D-9917-4A36-B478-F4A36F2E4EA7}">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+		<MediaTemplate EmbedCab="yes" />
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="SampleApp" />
+			</Directory>
+		</Directory>
+		<DirectoryRef Id="INSTALLFOLDER">
+			<Component Id="MainExecutable" Guid="{C8A24253-E11E-4DEE-8CE0-5FFD8DBC0463}">
+				<File Id="SampleApp1.2EXE" Source="$(var.SampleApp_1.2.TargetPath)" KeyPath="yes" />
+			</Component>
+		</DirectoryRef>
+		<Feature Id="ProductFeature" Title="SampleAppSetup_1.2" Level="1">
+			<ComponentRef Id="MainExecutable" />
+		</Feature>
+	</Product>
+</Wix>

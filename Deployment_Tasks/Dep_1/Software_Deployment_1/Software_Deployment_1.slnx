@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SampleAppSetup/SampleAppSetup.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="f3855e9a-986e-41f8-89f2-dc124244dd47">
+    <Platform Project="x86" />
+  </Project>
+  <Project Path="Software_Deployment_1/Software_Deployment_1.csproj" Id="e7d4f19b-c6ad-4978-8c70-80af7428887d" />
+</Solution>

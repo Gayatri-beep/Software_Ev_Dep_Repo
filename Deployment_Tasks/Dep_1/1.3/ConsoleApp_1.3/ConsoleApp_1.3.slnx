@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ConsoleApp_1.3/ConsoleApp_1.3.csproj" />
+  <Project Path="DLL_1.1.3/DLL_1.1.3.csproj" />
+  <Project Path="DLL_2.1.3/DLL_2.1.3.csproj" />
+  <Project Path="SampleAppSetup_1.3/SampleAppSetup_1.3.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0">
+    <Platform Project="x86" />
+  </Project>
+</Solution>
